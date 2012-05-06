@@ -4,6 +4,6 @@ platform :osx
 
 dependency 'BlocksKit'
 
-target :test do
+target :test, :exclusive => true do
   dependency 'Kiwi'
 end
