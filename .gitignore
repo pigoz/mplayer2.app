@@ -17,3 +17,6 @@
 /DerivedData
 xcuserdata
 project.xcworkspace
+
+# CocoaPods directory ignore
+/Pods
