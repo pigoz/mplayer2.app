@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80D3C34315566D1E0038863C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D3C34215566D1E0038863C /* Cocoa.framework */; };
+		80D3C34D15566D1E0038863C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80D3C34B15566D1E0038863C /* InfoPlist.strings */; };
+		80D3C34F15566D1E0038863C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D3C34E15566D1E0038863C /* main.m */; };
+		80D3C35315566D1E0038863C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 80D3C35115566D1E0038863C /* Credits.rtf */; };
+		80D3C35615566D1E0038863C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D3C35515566D1E0038863C /* AppDelegate.m */; };
+		80D3C35915566D1E0038863C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80D3C35715566D1E0038863C /* MainMenu.xib */; };
+		80D3C36115566D1E0038863C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D3C36015566D1E0038863C /* SenTestingKit.framework */; };
+		80D3C36215566D1E0038863C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D3C34215566D1E0038863C /* Cocoa.framework */; };
+		80D3C36A15566D1E0038863C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80D3C36815566D1E0038863C /* InfoPlist.strings */; };
+		80D3C36D15566D1E0038863C /* mplayer2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D3C36C15566D1E0038863C /* mplayer2Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80D3C36315566D1E0038863C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D3C33515566D1E0038863C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80D3C33D15566D1E0038863C;
+			remoteInfo = mplayer2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80D3C33E15566D1E0038863C /* mplayer2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mplayer2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80D3C34215566D1E0038863C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		80D3C34515566D1E0038863C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		80D3C34615566D1E0038863C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		80D3C34715566D1E0038863C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		80D3C34A15566D1E0038863C /* mplayer2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mplayer2-Info.plist"; sourceTree = "<group>"; };
+		80D3C34C15566D1E0038863C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80D3C34E15566D1E0038863C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80D3C35015566D1E0038863C /* mplayer2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mplayer2-Prefix.pch"; sourceTree = "<group>"; };
+		80D3C35215566D1E0038863C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		80D3C35415566D1E0038863C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		80D3C35515566D1E0038863C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		80D3C35815566D1E0038863C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		80D3C35F15566D1E0038863C /* mplayer2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mplayer2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80D3C36015566D1E0038863C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		80D3C36715566D1E0038863C /* mplayer2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mplayer2Tests-Info.plist"; sourceTree = "<group>"; };
+		80D3C36915566D1E0038863C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80D3C36B15566D1E0038863C /* mplayer2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mplayer2Tests.h; sourceTree = "<group>"; };
+		80D3C36C15566D1E0038863C /* mplayer2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mplayer2Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80D3C33B15566D1E0038863C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D3C34315566D1E0038863C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D3C35B15566D1E0038863C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D3C36115566D1E0038863C /* SenTestingKit.framework in Frameworks */,
+				80D3C36215566D1E0038863C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80D3C33315566D1E0038863C = {
+			isa = PBXGroup;
+			children = (
+				80D3C34815566D1E0038863C /* mplayer2 */,
+				80D3C36515566D1E0038863C /* mplayer2Tests */,
+				80D3C34115566D1E0038863C /* Frameworks */,
+				80D3C33F15566D1E0038863C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80D3C33F15566D1E0038863C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80D3C33E15566D1E0038863C /* mplayer2.app */,
+				80D3C35F15566D1E0038863C /* mplayer2Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80D3C34115566D1E0038863C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80D3C34215566D1E0038863C /* Cocoa.framework */,
+				80D3C36015566D1E0038863C /* SenTestingKit.framework */,
+				80D3C34415566D1E0038863C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80D3C34415566D1E0038863C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80D3C34515566D1E0038863C /* AppKit.framework */,
+				80D3C34615566D1E0038863C /* CoreData.framework */,
+				80D3C34715566D1E0038863C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		80D3C34815566D1E0038863C /* mplayer2 */ = {
+			isa = PBXGroup;
+			children = (
+				80D3C35415566D1E0038863C /* AppDelegate.h */,
+				80D3C35515566D1E0038863C /* AppDelegate.m */,
+				80D3C35715566D1E0038863C /* MainMenu.xib */,
+				80D3C34915566D1E0038863C /* Supporting Files */,
+			);
+			path = mplayer2;
+			sourceTree = "<group>";
+		};
+		80D3C34915566D1E0038863C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80D3C34A15566D1E0038863C /* mplayer2-Info.plist */,
+				80D3C34B15566D1E0038863C /* InfoPlist.strings */,
+				80D3C34E15566D1E0038863C /* main.m */,
+				80D3C35015566D1E0038863C /* mplayer2-Prefix.pch */,
+				80D3C35115566D1E0038863C /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80D3C36515566D1E0038863C /* mplayer2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				80D3C36B15566D1E0038863C /* mplayer2Tests.h */,
+				80D3C36C15566D1E0038863C /* mplayer2Tests.m */,
+				80D3C36615566D1E0038863C /* Supporting Files */,
+			);
+			path = mplayer2Tests;
+			sourceTree = "<group>";
+		};
+		80D3C36615566D1E0038863C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80D3C36715566D1E0038863C /* mplayer2Tests-Info.plist */,
+				80D3C36815566D1E0038863C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80D3C33D15566D1E0038863C /* mplayer2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80D3C37015566D1E0038863C /* Build configuration list for PBXNativeTarget "mplayer2" */;
+			buildPhases = (
+				80D3C33A15566D1E0038863C /* Sources */,
+				80D3C33B15566D1E0038863C /* Frameworks */,
+				80D3C33C15566D1E0038863C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mplayer2;
+			productName = mplayer2;
+			productReference = 80D3C33E15566D1E0038863C /* mplayer2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80D3C35E15566D1E0038863C /* mplayer2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80D3C37315566D1E0038863C /* Build configuration list for PBXNativeTarget "mplayer2Tests" */;
+			buildPhases = (
+				80D3C35A15566D1E0038863C /* Sources */,
+				80D3C35B15566D1E0038863C /* Frameworks */,
+				80D3C35C15566D1E0038863C /* Resources */,
+				80D3C35D15566D1E0038863C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80D3C36415566D1E0038863C /* PBXTargetDependency */,
+			);
+			name = mplayer2Tests;
+			productName = mplayer2Tests;
+			productReference = 80D3C35F15566D1E0038863C /* mplayer2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80D3C33515566D1E0038863C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 80D3C33815566D1E0038863C /* Build configuration list for PBXProject "mplayer2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 80D3C33315566D1E0038863C;
+			productRefGroup = 80D3C33F15566D1E0038863C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80D3C33D15566D1E0038863C /* mplayer2 */,
+				80D3C35E15566D1E0038863C /* mplayer2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80D3C33C15566D1E0038863C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D3C34D15566D1E0038863C /* InfoPlist.strings in Resources */,
+				80D3C35315566D1E0038863C /* Credits.rtf in Resources */,
+				80D3C35915566D1E0038863C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D3C35C15566D1E0038863C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D3C36A15566D1E0038863C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80D3C35D15566D1E0038863C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80D3C33A15566D1E0038863C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D3C34F15566D1E0038863C /* main.m in Sources */,
+				80D3C35615566D1E0038863C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D3C35A15566D1E0038863C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D3C36D15566D1E0038863C /* mplayer2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80D3C36415566D1E0038863C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80D3C33D15566D1E0038863C /* mplayer2 */;
+			targetProxy = 80D3C36315566D1E0038863C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80D3C34B15566D1E0038863C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80D3C34C15566D1E0038863C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		80D3C35115566D1E0038863C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80D3C35215566D1E0038863C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		80D3C35715566D1E0038863C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80D3C35815566D1E0038863C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		80D3C36815566D1E0038863C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80D3C36915566D1E0038863C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80D3C36E15566D1E0038863C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		80D3C36F15566D1E0038863C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		80D3C37115566D1E0038863C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mplayer2/mplayer2-Prefix.pch";
+				INFOPLIST_FILE = "mplayer2/mplayer2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		80D3C37215566D1E0038863C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mplayer2/mplayer2-Prefix.pch";
+				INFOPLIST_FILE = "mplayer2/mplayer2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		80D3C37415566D1E0038863C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mplayer2.app/Contents/MacOS/mplayer2";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mplayer2/mplayer2-Prefix.pch";
+				INFOPLIST_FILE = "mplayer2Tests/mplayer2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		80D3C37515566D1E0038863C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mplayer2.app/Contents/MacOS/mplayer2";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mplayer2/mplayer2-Prefix.pch";
+				INFOPLIST_FILE = "mplayer2Tests/mplayer2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80D3C33815566D1E0038863C /* Build configuration list for PBXProject "mplayer2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80D3C36E15566D1E0038863C /* Debug */,
+				80D3C36F15566D1E0038863C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80D3C37015566D1E0038863C /* Build configuration list for PBXNativeTarget "mplayer2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80D3C37115566D1E0038863C /* Debug */,
+				80D3C37215566D1E0038863C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		80D3C37315566D1E0038863C /* Build configuration list for PBXNativeTarget "mplayer2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80D3C37415566D1E0038863C /* Debug */,
+				80D3C37515566D1E0038863C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80D3C33515566D1E0038863C /* Project object */;
+}

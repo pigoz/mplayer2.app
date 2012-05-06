@@ -1,0 +1,19 @@
+*~
+*.lock
+.DS_Store
+*.swp
+*.out
+
+# XCode specifics
+/build
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+*~.nib
+
+# XCode 4 workspace state
+/DerivedData
+xcuserdata
+project.xcworkspace
