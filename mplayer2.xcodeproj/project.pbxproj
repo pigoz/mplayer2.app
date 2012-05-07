@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		049D7B2295BC4AD1895E713D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F9A71FD5A645109CADCDC8 /* libPods.a */; };
+		7BFBA16E15579C220094E7AD /* MPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBA16D15579C220094E7AD /* MPlayer.m */; };
+		7BFBA17215579C680094E7AD /* MPlayerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBA17115579C680094E7AD /* MPlayerSpec.m */; };
+		7BFBA17C155834380094E7AD /* MPlayerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBA17B155834380094E7AD /* MPlayerConnection.m */; };
+		7BFBA1831558698B0094E7AD /* MPlayerLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBA1821558698B0094E7AD /* MPlayerLocator.m */; };
 		80CAB7A21556CCCD0030F689 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CAB7A11556CCCD0030F689 /* libPods-test.a */; };
 		80D3C34315566D1E0038863C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D3C34215566D1E0038863C /* Cocoa.framework */; };
 		80D3C34D15566D1E0038863C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80D3C34B15566D1E0038863C /* InfoPlist.strings */; };
@@ -18,7 +22,6 @@
 		80D3C36115566D1E0038863C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D3C36015566D1E0038863C /* SenTestingKit.framework */; };
 		80D3C36215566D1E0038863C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D3C34215566D1E0038863C /* Cocoa.framework */; };
 		80D3C36A15566D1E0038863C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80D3C36815566D1E0038863C /* InfoPlist.strings */; };
-		80D3C36D15566D1E0038863C /* MPSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D3C36C15566D1E0038863C /* MPSpec.m */; };
 		D56B9558D3FA420DA276D41B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F9A71FD5A645109CADCDC8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +37,13 @@
 
 /* Begin PBXFileReference section */
 		3B8E42DC242048139DE7D404 /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		7BFBA16C15579C220094E7AD /* MPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPlayer.h; sourceTree = "<group>"; };
+		7BFBA16D15579C220094E7AD /* MPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPlayer.m; sourceTree = "<group>"; };
+		7BFBA17115579C680094E7AD /* MPlayerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPlayerSpec.m; sourceTree = "<group>"; };
+		7BFBA17A155834380094E7AD /* MPlayerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPlayerConnection.h; sourceTree = "<group>"; };
+		7BFBA17B155834380094E7AD /* MPlayerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPlayerConnection.m; sourceTree = "<group>"; };
+		7BFBA181155867500094E7AD /* MPlayerLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPlayerLocator.h; sourceTree = "<group>"; };
+		7BFBA1821558698B0094E7AD /* MPlayerLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPlayerLocator.m; sourceTree = "<group>"; };
 		80CAB7A11556CCCD0030F689 /* libPods-test.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-test.a"; path = "DerivedData/mplayer2/Build/Products/Debug/libPods-test.a"; sourceTree = "<group>"; };
 		80D3C33E15566D1E0038863C /* mplayer2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mplayer2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D3C34215566D1E0038863C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -52,7 +62,6 @@
 		80D3C36015566D1E0038863C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		80D3C36715566D1E0038863C /* mplayer2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mplayer2Tests-Info.plist"; sourceTree = "<group>"; };
 		80D3C36915566D1E0038863C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		80D3C36C15566D1E0038863C /* MPSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPSpec.m; sourceTree = "<group>"; };
 		A4F9A71FD5A645109CADCDC8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +89,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BFBA16B15579C220094E7AD /* models */ = {
+			isa = PBXGroup;
+			children = (
+				7BFBA181155867500094E7AD /* MPlayerLocator.h */,
+				7BFBA1821558698B0094E7AD /* MPlayerLocator.m */,
+				7BFBA17A155834380094E7AD /* MPlayerConnection.h */,
+				7BFBA17B155834380094E7AD /* MPlayerConnection.m */,
+				7BFBA16C15579C220094E7AD /* MPlayer.h */,
+				7BFBA16D15579C220094E7AD /* MPlayer.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		7BFBA17015579C680094E7AD /* models */ = {
+			isa = PBXGroup;
+			children = (
+				7BFBA17115579C680094E7AD /* MPlayerSpec.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		80D3C33315566D1E0038863C = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +155,7 @@
 		80D3C34815566D1E0038863C /* mplayer2 */ = {
 			isa = PBXGroup;
 			children = (
+				7BFBA16B15579C220094E7AD /* models */,
 				80D3C35415566D1E0038863C /* AppDelegate.h */,
 				80D3C35515566D1E0038863C /* AppDelegate.m */,
 				80D3C35715566D1E0038863C /* MainMenu.xib */,
@@ -148,7 +179,7 @@
 		80D3C36515566D1E0038863C /* mplayer2Tests */ = {
 			isa = PBXGroup;
 			children = (
-				80D3C36C15566D1E0038863C /* MPSpec.m */,
+				7BFBA17015579C680094E7AD /* models */,
 				80D3C36615566D1E0038863C /* Supporting Files */,
 			);
 			path = mplayer2Tests;
@@ -288,6 +319,9 @@
 			files = (
 				80D3C34F15566D1E0038863C /* main.m in Sources */,
 				80D3C35615566D1E0038863C /* AppDelegate.m in Sources */,
+				7BFBA16E15579C220094E7AD /* MPlayer.m in Sources */,
+				7BFBA17C155834380094E7AD /* MPlayerConnection.m in Sources */,
+				7BFBA1831558698B0094E7AD /* MPlayerLocator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80D3C36D15566D1E0038863C /* MPSpec.m in Sources */,
+				7BFBA17215579C680094E7AD /* MPlayerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
