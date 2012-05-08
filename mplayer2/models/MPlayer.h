@@ -15,9 +15,10 @@
  * with mplayer2.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#import "MPlayerConnection.h"
+
 @interface MPlayer : NSObject {
-    NSTask *task;
-	NSArray *runnningModes;
+    MPlayerConnection *connection;
 }
 
 - (BOOL) playing;

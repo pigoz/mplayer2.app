@@ -17,12 +17,19 @@
 
 #import "MPlayerLocator.h"
 
+@protocol MPlayerConnectionDelegate <NSObject>
+-(void) outputAvailable:(NSString *)error;
+-(void) errorAvailable:(NSString *)error;
+-(void) connectionEnded;
+@end
+
 @interface MPlayerConnection : NSObject {
     NSTask *task;
+    id <MPlayerConnectionDelegate> connectionDelegate;
 }
 
 -(id) initWithFileName:(NSString *)fileName
-      andBinaryLocator:(id <MPlayerLocator>)locator;
+         binaryLocator:(id <MPlayerLocator>)locator
+    connectionDelegate:(id <MPlayerConnectionDelegate>)delegate;
 - (void) stop;
-
 @end

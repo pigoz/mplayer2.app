@@ -17,7 +17,7 @@
 
 #include "MPlayerConnection.h"
 
-#pragma mark private methods
+#pragma mark Private definitition
 @interface MPlayerConnection (private)
 - (void) observeHandle:(NSFileHandle *)fileHandle withCallback:(SEL)selector;
 - (void) observeTaskTermination;
@@ -27,6 +27,8 @@
 - (NSFileHandle *) stdErr;
 @end
 
+#pragma mark -
+#pragma mark Private implementation
 @implementation MPlayerConnection (private)
 
 - (void) observeHandle:(NSFileHandle *)fileHandle withCallback:(SEL)selector
@@ -73,23 +75,29 @@
 
 @end
 
-#pragma mark public methods
+#pragma mark -
+#pragma mark Public implementation
 @implementation MPlayerConnection
 
 -(id) init
 {
-    // fail on purpose, this method should never be called!
-    return [self initWithFileName:nil andBinaryLocator:nil];
+    // fail on purpose: this method should never be called!
+    return [self initWithFileName:nil binaryLocator:nil connectionDelegate:nil];
 }
 
 -(id) initWithFileName:(NSString *)fileName
-      andBinaryLocator:(id <MPlayerLocator>)locator
+         binaryLocator:(id <MPlayerLocator>)locator
+    connectionDelegate:(id <MPlayerConnectionDelegate>)delegate
 {
     NSAssert(fileName != nil, @"fileName must be not nil. Please, contact the"
              " developers.");
 
+    NSAssert(delegate != nil, @"delegate must be not nil. Please, contact the"
+             " developers.");
+    
     self = [super init];
     if (self) {
+        connectionDelegate = [delegate retain];
         task = [NSTask new];
         [task setStandardInput:[NSPipe pipe]];
         [task setStandardOutput:[NSPipe pipe]];
@@ -122,16 +130,18 @@
 
 -(void) stop
 {
-    [task terminate];
-    [task waitUntilExit];
+    if (task && [task  isRunning]) {
+        [task terminate];
+        [task waitUntilExit];
+    }
 }
 
 -(void) outputAvailable:(NSNotification*)notification
 {
     if (task && [task isRunning]) {
 		NSData *data = [[notification userInfo] objectForKey:NSFileHandleNotificationDataItem];
-        #warning TODO: implement this later
-        NSLog(@"output: %@", data);
+        NSString *stringData = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        [connectionDelegate outputAvailable:[stringData autorelease]];
         [self startReadingOnFileHandle:[self stdOut]];
 	}
 }
@@ -140,8 +150,8 @@
 {
     if (task && [task isRunning]) {
 		NSData *data = [[notification userInfo] objectForKey:NSFileHandleNotificationDataItem];
-        #warning TODO: implement this later
-        NSLog(@"error: %@", data);
+        NSString *stringData = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        [connectionDelegate errorAvailable:[stringData autorelease]];
         [self startReadingOnFileHandle:[self stdErr]];
 	}
 }
@@ -149,6 +159,7 @@
 -(void) taskHasTerminated:(NSNotification*)notification
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [connectionDelegate connectionEnded];
 }
 
 @end

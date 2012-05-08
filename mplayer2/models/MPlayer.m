@@ -18,20 +18,38 @@
 #include "MPlayer.h"
 #include "MPlayerConnection.h"
 
-@implementation MPlayer
+@interface MPlayer (ConnectionDelegates) <MPlayerConnectionDelegate>
+-(void) outputAvailable:(NSString *)error;
+-(void) errorAvailable:(NSString *)error;
+-(void) connectionEnded;
+@end
 
+@implementation MPlayer (ConnectionDelegates)
+-(void) outputAvailable:(NSString *)error {}
+-(void) errorAvailable:(NSString *)error {}
+-(void) connectionEnded { [self stop]; }
+@end
+
+#pragma mark -
+@implementation MPlayer
 - (void) play:(NSString *)fileName
 {
-    [[MPlayerConnection alloc] initWithFileName:fileName
-                               andBinaryLocator:[MPlayerShellLocator new]];
+    if (!connection) {
+        connection = [[MPlayerConnection alloc]
+                         initWithFileName:fileName
+                            binaryLocator:[MPlayerShellLocator new]
+                       connectionDelegate:self];
+    }
 }
 
 - (void) stop {
-    
+    [connection stop];
+    [connection release];
+    connection = nil;
 }
 
 - (BOOL) playing {
-    return NO;
+    return !!connection;
 }
 
 @end

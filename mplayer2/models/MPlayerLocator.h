@@ -15,7 +15,7 @@
  * with mplayer2.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-@protocol MPlayerLocator
+@protocol MPlayerLocator <NSObject>
 - (NSString *) locate;
 @end
 
