@@ -1,6 +1,6 @@
 # vim: syntax=ruby
 
-platform :osx
+platform :osx, '10.8'
 
 dependency 'BlocksKit'
 dependency 'Objection'
